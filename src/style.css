@@ -4,102 +4,52 @@
 
 body {
   margin: 0;
-  min-height: 100vh;
   font-family: Arial, sans-serif;
-  color: #ffffff;
-
-  background:
-    radial-gradient(circle at 15% 20%, rgba(0, 255, 255, 0.18), transparent 25%),
-    radial-gradient(circle at 85% 15%, rgba(255, 0, 200, 0.2), transparent 25%),
-    radial-gradient(circle at 50% 90%, rgba(100, 50, 255, 0.25), transparent 30%),
-    linear-gradient(135deg, #05001a, #100044, #21004d, #02001c);
-
-  padding: 50px 20px;
+  background: #9cdcf7;
+  color: white;
 }
 
 #app {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 35px;
-
-  background: rgba(20, 15, 55, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 24px;
-
-  box-shadow:
-    0 0 30px rgba(0, 255, 255, 0.15),
-    0 0 70px rgba(150, 0, 255, 0.2);
-
-  backdrop-filter: blur(12px);
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #003686;
+  border-radius: 22px;
 }
 
 h1 {
-  margin: 0 0 25px;
-  font-size: 38px;
-  line-height: 1.2;
-
-  background: linear-gradient(
-    90deg,
-    #00ffff,
-    #ffffff,
-    #ff5cff,
-    #7c7cff
-  );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-align: center;
+  color: #fefefe;
+  font-size: 32px;
+  margin-bottom: 25px;
 }
 
 img,
 video {
   display: block;
   width: 100%;
-  max-width: 900px;
-  height: auto;
-
-  margin: 20px auto;
-
-  border-radius: 18px;
-  border: 2px solid rgba(0, 255, 255, 0.4);
-
-  box-shadow:
-    0 0 25px rgba(0, 255, 255, 0.2),
-    0 0 50px rgba(180, 0, 255, 0.15);
+  max-height: 650px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin: 0 auto 20px;
 }
 
 p {
   font-size: 17px;
-  line-height: 1.8;
-  color: #e9e5ff;
+  line-height: 1.7;
+  color: #ffffff;
 }
 
-a {
-  color: #00ffff;
-  font-weight: bold;
-}
-
-a:hover {
-  color: #ff65ff;
-}
-
-/* Loading text */
-#app > p:first-child {
-  text-align: center;
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-  body {
-    padding: 20px 10px;
-  }
-
+@media (max-width: 600px) {
   #app {
-    padding: 20px;
-    border-radius: 18px;
+    width: 95%;
+    padding: 18px;
+    margin: 20px auto;
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   p {
